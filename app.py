@@ -14,8 +14,14 @@ def template():
     py_name = "すなのもの"
     return render_template("index.html", name = py_name)
 
+@app.route("/sarada")
+def sarada():
+    return render_template("sarada.html")
 
 
+@app.route("/new")
+def new():
+    return render_template("new.html")
 
 
 
